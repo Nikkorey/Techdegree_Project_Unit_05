@@ -1,0 +1,12 @@
+.container__hero {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @media #{$brk-point-1024} {
+    max-width: 1100px;
+  }
+}

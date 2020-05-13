@@ -1,0 +1,22 @@
+{
+  "name": "project5",
+  "version": "1.0.0",
+  "description": "Landing page for photo gallery",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikkorey/Techdegree_Project_Unit_05.git"
+  },
+  "author": "Nikko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikkorey/Techdegree_Project_Unit_05/issues"
+  },
+  "homepage": "https://github.com/Nikkorey/Techdegree_Project_Unit_05#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

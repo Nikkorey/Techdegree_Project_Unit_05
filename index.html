@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Interactive Photo Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="js/lightbox/lightbox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container__hero">
+      <header class="header">
+        <h1 class="header__title">An Interactive Photo Gallery</h1>
+
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Search..."
+          title="Type in a name"
+          class="header__input"
+        />
+      </header>
+
+      <main id="photos" class="main">
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/01.jpg"
+            data-lightbox="roadtrip"
+            data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."
+          >
+            <img
+              src="photos/thumbnails/01.jpg"
+              alt="Hay Bales"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Hay Bales</h3>
+              <p class="main__caption">
+                I love hay bales. Took this snap on a drive through the
+                countryside past some straw fields.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/02.jpg"
+            data-lightbox="roadtrip"
+            data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."
+          >
+            <img
+              src="photos/thumbnails/02.jpg"
+              alt="Lake"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Lake</h3>
+              <p class="main__caption">
+                The lake was so calm today. We had a great view of the snow on
+                the mountains from here.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/03.jpg"
+            data-lightbox="roadtrip"
+            data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below"
+          >
+            <img
+              src="photos/thumbnails/03.jpg"
+              alt="Canyon"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Canyon</h3>
+              <p class="main__caption">
+                I hiked to the top of the mountain and got this picture of the
+                canyon and trees below.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/04.jpg"
+            data-lightbox="roadtrip"
+            data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today. "
+          >
+            <img
+              src="photos/thumbnails/04.jpg"
+              alt="Iceberg"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Iceberg</h3>
+              <p class="main__caption">
+                It was amazing to see an iceberg up close, it was so cold but
+                didn’t snow today.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/05.jpg"
+            data-lightbox="roadtrip"
+            data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."
+          >
+            <img
+              src="photos/thumbnails/05.jpg"
+              alt="Desert"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Desert</h3>
+              <p class="main__caption">
+                The red cliffs were beautiful. It was really hot in the desert
+                but we did a lot of walking through the canyons.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/06.jpg"
+            data-lightbox="roadtrip"
+            data-title="Fall is coming, I love when the leaves on the trees start to change color."
+          >
+            <img
+              src="photos/thumbnails/06.jpg"
+              alt="Fall"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Fall</h3>
+              <p class="main__caption">
+                Fall is coming, I love when the leaves on the trees start to
+                change color.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/07.jpg"
+            data-lightbox="roadtrip"
+            data-title="I drove past this plantation yesterday, everything is so green!"
+          >
+            <img
+              src="photos/thumbnails/07.jpg"
+              alt="Plantation"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Plantation</h3>
+              <p class="main__caption">
+                I drove past this plantation yesterday, everything is so green!
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/08.jpg"
+            data-lightbox="roadtrip"
+            data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!"
+          >
+            <img
+              src="photos/thumbnails/08.jpg"
+              alt="Dunes"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Dunes</h3>
+              <p class="main__caption">
+                My summer vacation to the Oregon Coast. I love the sandy dunes.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/09.jpg"
+            data-lightbox="roadtrip"
+            data-title="We enjoyed a quiet stroll down this countryside lane. "
+          >
+            <img
+              src="photos/thumbnails/09.jpg"
+              alt="Countryside Lane"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Countryside Lane</h3>
+              <p class="main__caption">
+                We enjoyed a quiet stroll down this countryside lane.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/10.jpg"
+            data-lightbox="roadtrip"
+            data-title="Sunset at the coast! The sky turned a lovely shade of orange."
+          >
+            <img
+              src="photos/thumbnails/10.jpg"
+              alt="Sunset"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Sunset</h3>
+              <p class="main__caption">
+                Sunset at the coast! The sky turned a lovely shade of orange.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/11.jpg"
+            data-lightbox="roadtrip"
+            data-title="I did a tour of a cave today and the view of the landscape below was breathtaking."
+          >
+            <img
+              src="photos/thumbnails/11.jpg"
+              alt="Cave"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Cave</h3>
+              <p class="main__caption">
+                I did a tour of a cave today and the view of the landscape below
+                was breathtaking.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="main__photos">
+          <a
+            class="main__lightbox"
+            href="photos/12.jpg"
+            data-lightbox="roadtrip"
+            data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
+          >
+            <img
+              src="photos/thumbnails/12.jpg"
+              alt="Bluebells"
+              class="main__thumbnail"
+            />
+            <div class="main__description search">
+              <h3 class="main__title">Bluebells</h3>
+              <p class="main__caption">
+                I walked through this meadow of bluebells and got a good view of
+                the snow on the mountain before the fog came in.
+              </p>
+            </div>
+          </a>
+        </div>
+      </main>
+      <!-- end of wrapper -->
+
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__list-items">
+            <a
+              href="https://twitter.com/nikkohular"
+              class="footer__social footer__social-twitter"
+              target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li class="footer__list-items">
+            <a
+              href="https://www.linkedin.com/in/nikko-rey-hular-121857130/"
+              class="footer__social footer__social-linkedin"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="footer__list-items">
+            <a
+              href="https://github.com/Nikkorey"
+              class="footer__social footer__social-github"
+              target="_blank"
+              >Github</a
+            >
+          </li>
+        </ul>
+        <p class="footer__copyright">Copyright &copy; 2020, Nikko Rey Hular</p>
+      </footer>
+    </div>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/lightbox/lightbox-plus-jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

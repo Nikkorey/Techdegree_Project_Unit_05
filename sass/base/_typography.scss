@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  margin-top: 3rem;
+
+  &__title {
+    font-size: 3rem;
+    font-family: $stack-righteous;
+    padding: 0 1rem;
+    animation: moveInRight 2s ease-out;
+
+    @media #{$brk-point-768} {
+      font-size: 4rem;
+    }
+  }
+
+  &__input {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+    outline: none;
+    animation: moveInLeft 2s ease-out;
+
+    @media #{$brk-point-768} {
+      width: 60%;
+      padding: 1.5rem;
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+
+      &:hover {
+        @include style;
+      }
+
+      &:focus {
+        @include style;
+      }
+    }
+  }
+}
